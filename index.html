@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>大合集</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div >
+        <section class="main">
+            <div id="mainContent">
+                <!-- 手机端菜单 -->
+                <div id="menu"><a href="#">菜单</a></div>
+
+
+
+                <!-- 资源下载 -->
+                <div class="box">
+                    <a href="" name="operation"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-yunying"></i>资源大合集</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://yandex.eu">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="y.png"> 搜索无限可能
+                                </div>
+
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.51cg1.co/archives/7782/">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src=""> 51吃瓜网
+                                </div>
+
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://chonggeheiliao.com/category/cghl">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="c.png"> 冲哥黑料
+                                </div>
+
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://4maomm.com/vodtypehtml/25.html">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src=""> 猫咪av
+                                </div>
+
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://3bmmvd1e.life/uczhongzhuan/index.html">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="1.jpg"> 迷妹网
+                                </div>
+
+                            </div>
+                        </a>
+
+
+                        <a target="_blank" href="https://bchichua.xyz/html/laohantuiche_20607_6.html">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="http://www.w3.org/2000/svg"> 老汉推车
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://m.xmmv30.com/">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="logo.png"> 学妹网
+                                </div>
+
+                            </div>
+                        </a>
+
+
+                        <a target="_blank" href="https://sld10.buzz/">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="s.png"> 水帘洞导航（不推荐）
+                                </div>
+
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+
+
+               
+
+
+
+                <footer class="footer">
+                    <div class="copyright">
+
+                    </div>
+                </footer>
+        </section>
+        <script>
+            var oMenu = document.getElementById('menu');
+            var oBtn = oMenu.getElementsByTagName('a')[0];
+            var oLeftBar = document.getElementById('leftBar');
+            oBtn.onclick = function() {
+                if (oLeftBar.offsetLeft == 0) {
+                    oLeftBar.style.left = -249 + 'px';
+                } else {
+                    oLeftBar.style.left = 0 + 'px';
+                }
+                if (document.documentElement.clientWidth <= 481) {
+                    document.onclick = function() {
+                        if (oLeftBar.offsetLeft == 0) {
+                            console.log(123);
+                            oLeftBar.style.left = -249 + 'px';
+                        }
+                    }
+                }
+            }
+
+            var oNavItem = document.getElementById('navItem');
+            var aA = oNavItem.getElementsByTagName('a');
+            for (var i = 0; i < aA.length; i++) {
+                aA[i].onclick = function() {
+                    for (var j = 0; j < aA.length; j++) {
+                        aA[j].className = '';
+                    }
+                    this.className = 'active';
+                }
+            }
+        </script>
+</body>
+
+</html>
