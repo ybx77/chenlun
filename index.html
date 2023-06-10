@@ -1,190 +1,78 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>大合集</title>
-    <link rel="stylesheet" href="css/iconfont.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .h1 {
-            align-items: center;
-        }
-        
-        m1 {
-            text-align: center;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超级搜索</title>
 </head>
 
-<body>
-    <div>
-        <div class="m1">
-            <h1>考虑到此网站的使用时间，为了护眼，特意改成了黑色</h1>
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+        height: 300px;
+        /* 父容器的高度 */
+    }
+    
+    .shuiping {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    input {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .beijing {
+        background-image: url('/02c854e4a630839a0ed7303b63322f6.jpg');
+        display: block;
+        background-repeat: no-repeat;
+        /* 背景图不重复 */
+        /*   background-size: cover;
+      背景图覆盖整个页面 */
+    }
+</style>
+
+<body class="beijing">
+
+
+
+    <div class="shuiping">
+        <!-- HTML代码 -->
+        <h1>
+            欢迎使用超级搜索，无限制搜索。
+        </h1>
+    </div>
+    <div class="container">
+        <input type="text" id="content">
+        <div>
+            <button onclick="generateUrl()">冲冲冲</button>
         </div>
-        <section class="main">
-            <div id="mainContent">
-                <!-- 手机端菜单 
-                <div id="menu"><a href="#">菜单</a></div>-->
 
-
-
-                <!-- 资源下载 -->
-                <div class="box">
-                    <a href="" name="operation"></a>
-                    <div class="sub-category">
-                        <div><i class="iconfont icon-yunying"></i>资源大合集</div>
-                    </div>
-                    <div>
-                        <a target="_blank" href="https://yandex.eu">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="y.png"> 搜索无限可能
-                                </div>
-
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://www.66se6.com">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src=""> 66色（需要挂vpn）
-                                </div>
-
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://063fk.xyz/index.html">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="c.png"> 久久爱
-                                </div>
-
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://medichimica.com/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="90a763a627151786"> 爱情岛
-                                </div>
-
-                            </div>
-                        </a>
-                        <a target="_blank" href="https://www.zstv24.com/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="mini_logo.png"> 潮流tv
-                                </div>
-
-                            </div>
-                        </a>
-
-
-                        <a target="_blank" href="https://home91.gitbook.io/jiuse">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="https___1182165045-files.gitbook.io_~_files_v0_b_gitbook-x-prod.appspot.com_o_spaces2Ficon2Ffavicon-32x32.png_alt=media&token=258e07de-d02e-456b-8f20-692711b8bd2f"> 九色
-                                </div>
-
-                            </div>
-                        </a>
-
-                        <a target="_blank" href="https://yigewangzhi.us/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src=""> 你懂的
-                                </div>
-
-                            </div>
-                        </a>
-
-
-                        <a target="_blank" href="https://kanliao2.one/archives/3686/">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="s.png"> 吃瓜
-                                </div>
-
-                            </div>
-                        </a>
-
-                        <a target="_blank" href="https://4gu2z7x.info/vod/63/50841">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="1.jpg"> 陈伦定制
-                                </div>
-
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- 资源下载 -->
-                <div class="box">
-                    <a href="" name="operation"></a>
-                    <div class="sub-category">
-                        <div><i class="iconfont icon-yunying"></i>手机app系列</div>
-                    </div>
-                    <div>
-                        <a target="_blank" href="/PornHub免费（正能量）广告不要点.apk">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src=""> PornHub免费（正能量）广告不要点(推荐)
-                                </div>
-
-                            </div>
-                        </a>
-                        <a target="_blank" href="/快手.apk">
-                            <div class="item">
-                                <div class="logo">
-                                    <img src="">快手
-                                </div>
-
-                            </div>
-                        </a>
-                    </div>
-                </div>
+    </div>
 
 
 
 
 
-
-                <footer class="footer">
-                    <div class="copyright">
-
-                    </div>
-                </footer>
-        </section>
-        <script>
-            var oMenu = document.getElementById('menu');
-            var oBtn = oMenu.getElementsByTagName('a')[0];
-            var oLeftBar = document.getElementById('leftBar');
-            oBtn.onclick = function() {
-                if (oLeftBar.offsetLeft == 0) {
-                    oLeftBar.style.left = -249 + 'px';
-                } else {
-                    oLeftBar.style.left = 0 + 'px';
-                }
-                if (document.documentElement.clientWidth <= 481) {
-                    document.onclick = function() {
-                        if (oLeftBar.offsetLeft == 0) {
-                            console.log(123);
-                            oLeftBar.style.left = -249 + 'px';
-                        }
-                    }
-                }
-            }
-
-            var oNavItem = document.getElementById('navItem');
-            var aA = oNavItem.getElementsByTagName('a');
-            for (var i = 0; i < aA.length; i++) {
-                aA[i].onclick = function() {
-                    for (var j = 0; j < aA.length; j++) {
-                        aA[j].className = '';
-                    }
-                    this.className = 'active';
-                }
-            }
-        </script>
 </body>
+
+
+<script>
+    // JavaScript代码
+    function generateUrl() {
+        var content = document.getElementById("content").value;
+        var baseUrl = "https://yandex.eu/search/touch/?text=";
+        var xiaoxiao = "&search_source=yaeu_touch_common&mda=0&lr=10590";
+        var url = baseUrl + content + xiaoxiao;
+        console.log(url);
+        window.location.href = url;
+        // 这里可以根据具体需求进行处理，例如利用window.location.href跳转页面
+    }
+</script>
+
+
 
 </html>
